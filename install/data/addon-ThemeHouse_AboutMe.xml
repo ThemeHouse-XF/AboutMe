@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="ThemeHouse_AboutMe" title="[⌂] About Me" version_string="1.0.2" version_id="1447261019" url="http://xf.themehouse.io/" install_callback_class="ThemeHouse_Install" install_callback_method="install" uninstall_callback_class="ThemeHouse_Install" uninstall_callback_method="uninstall">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="controller_pre_dispatch" execute_order="10" callback_class="ThemeHouse_Listener_ControllerPreDispatch" callback_method="controllerPreDispatch" active="1" hint="" description=""/>
+    <listener event_id="controller_pre_dispatch" execute_order="10" callback_class="ThemeHouse_Listener_ControllerPreDispatch" callback_method="controllerPreDispatch" active="1" hint="" description=""/>
+    <listener event_id="controller_pre_dispatch" execute_order="10" callback_class="ThemeHouse_Listener_ControllerPreDispatch" callback_method="controllerPreDispatch" active="1" hint="" description=""/>
+    <listener event_id="controller_pre_dispatch" execute_order="10" callback_class="ThemeHouse_Listener_ControllerPreDispatch" callback_method="controllerPreDispatch" active="1" hint="" description=""/>
+    <listener event_id="file_health_check" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_FileHealthCheck" callback_method="fileHealthCheck" active="1" hint="" description=""/>
+    <listener event_id="file_health_check" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_FileHealthCheck" callback_method="fileHealthCheck" active="1" hint="" description=""/>
+    <listener event_id="file_health_check" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_FileHealthCheck" callback_method="fileHealthCheck" active="1" hint="" description=""/>
+    <listener event_id="file_health_check" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_FileHealthCheck" callback_method="fileHealthCheck" active="1" hint="" description=""/>
+    <listener event_id="init_dependencies" execute_order="10" callback_class="ThemeHouse_Listener_InitDependencies" callback_method="initDependencies" active="1" hint="" description=""/>
+    <listener event_id="init_dependencies" execute_order="10" callback_class="ThemeHouse_Listener_InitDependencies" callback_method="initDependencies" active="1" hint="" description=""/>
+    <listener event_id="init_dependencies" execute_order="10" callback_class="ThemeHouse_Listener_InitDependencies" callback_method="initDependencies" active="1" hint="" description=""/>
+    <listener event_id="init_dependencies" execute_order="10" callback_class="ThemeHouse_Listener_InitDependencies" callback_method="initDependencies" active="1" hint="" description=""/>
+    <listener event_id="load_class" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_LoadClass" callback_method="loadClassDataWriter" active="0" hint="XenForo_DataWriter_User" description="XenForo_DataWriter_User (For XenForo 1.2 and above)" compatibility_switch="1"/>
+    <listener event_id="load_class" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_LoadClass" callback_method="loadClassController" active="0" hint="XenForo_ControllerPublic_Account" description="XenForo_ControllerPublic_Account (For XenForo 1.2 and above)" compatibility_switch="1"/>
+    <listener event_id="load_class" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_LoadClass" callback_method="loadClassModel" active="0" hint="XenForo_Model_UserProfile" description="XenForo_Model_UserProfile (For XenForo 1.2 and above)" compatibility_switch="1"/>
+    <listener event_id="load_class" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_LoadClass" callback_method="loadClassView" active="0" hint="XenForo_ViewPublic_Member_View" description="XenForo_ViewPublic_Member_View (For XenForo 1.2 and above)" compatibility_switch="1"/>
+    <listener event_id="load_class_controller" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_LoadClass" callback_method="loadClassController" active="1" hint="" description="(For XenForo 1.1 and below)" compatibility_switch="1"/>
+    <listener event_id="load_class_datawriter" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_LoadClass" callback_method="loadClassDataWriter" active="1" hint="" description="(For XenForo 1.1 and below)" compatibility_switch="1"/>
+    <listener event_id="load_class_model" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_LoadClass" callback_method="loadClassModel" active="1" hint="" description="(For XenForo 1.1 and below)" compatibility_switch="1"/>
+    <listener event_id="load_class_view" execute_order="10" callback_class="ThemeHouse_AboutMe_Listener_LoadClass" callback_method="loadClassView" active="1" hint="" description="(For XenForo 1.1 and below)" compatibility_switch="1"/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <group group_id="th_aboutMe" display_order="2000" debug_only="0"/>
+    <option option_id="th_aboutMe_showFirst" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value>0</default_value>
+      <edit_format_params/>
+      <sub_options/>
+      <relation group_id="th_aboutMe" display_order="1"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_group_th_aboutMe" version_id="1385141208" version_string="1.0.0"><![CDATA[About Me by ThemeHouse]]></phrase>
+    <phrase title="option_group_th_aboutMe_description" version_id="1385141208" version_string="1.0.0"><![CDATA[Options for the About Me by ThemeHouse add-on.]]></phrase>
+    <phrase title="option_th_aboutMe_showFirst" version_id="1385141208" version_string="1.0.0"><![CDATA[Show about content above signature]]></phrase>
+    <phrase title="option_th_aboutMe_showFirst_explain" version_id="1385141208" version_string="1.0.0"><![CDATA[This will show the about content at the top of the Information tab on a member's profile.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications>
+    <modification template="account_personal_details" modification_key="th_accountPersonalDetails_aboutMe" description="Adds attachment uploader to personal details page." execution_order="10" enabled="1" action="preg_replace">
+      <find><![CDATA[#(<dl class="ctrlUnit submitUnit">\s*<dt></dt>\s*<dd>.*)(</dd>\s*</dl>)#Us]]></find>
+      <replace><![CDATA[${1}
+<xen:include template="attachment_upload_button" />
+${2}
+<xen:if is="{$attachmentParams}">
+	<dl class="ctrlUnit AttachedFilesUnit">
+		<dt><label for="ctrl_uploader">{xen:phrase attached_files}:</label></dt>
+		<dd><xen:include template="attachment_editor" /></dd>
+	</dl>
+</xen:if>]]></replace>
+    </modification>
+    <modification template="footer" modification_key="th_copyrightNotice_aboutMe" description="Copyright notice for [⌂] About Me" execution_order="1" enabled="1" action="callback">
+      <find><![CDATA[/{xen:phrase (?:xenforo|extra)_copyright}/]]></find>
+      <replace><![CDATA[ThemeHouse_Listener_InitDependencies::copyrightNotice]]></replace>
+    </modification>
+    <modification template="member_view" modification_key="th_memberViewAttachments_aboutMe" description="Adds attachments box to member view." execution_order="10" enabled="1" action="preg_replace">
+      <find><![CDATA[#(<li id="info" class="profileContent">)(.*)(<xen:if is="{\$user.about}"><div class="baseHtml ugc">{xen:raw \$user\.aboutHtml}</div></xen:if>)(.*</div>\s*(?:</xen:if>\s*)?)(</li>)#Us]]></find>
+      <replace><![CDATA[${1}
+<xen:if is="{$xenOptions.th_aboutMe_showFirst}">
+${3}
+</xen:if>
+${2}
+<xen:if is="!{$xenOptions.th_aboutMe_showFirst}">
+${3}
+</xen:if>
+${4}
+<xen:require js="js/themehouse/aboutme/attachments.js" />
+<xen:if is="{$user.about.attachments}">
+	<xen:include template="attached_files">
+		<xen:map from="$user.about" to="$post" />
+	</xen:include>
+</xen:if>
+${5}]]></replace>
+    </modification>
+    <modification template="member_view" modification_key="th_memberView_aboutMe" description="Adds information for lightbox attachments." execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[<div class="profilePage"]]></find>
+      <replace><![CDATA[<div class="profilePage" data-author="{$user.username}"]]></replace>
+    </modification>
+  </public_template_modifications>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
